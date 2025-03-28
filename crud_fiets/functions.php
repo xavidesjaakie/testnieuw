@@ -130,7 +130,7 @@ function updateRecord($row){
     // Maak een query 
     $sql = "UPDATE " . CRUD_TABLE .
     " SET 
-        merk = :merk, 
+        naam = :naam, 
         type = :type, 
         prijs = :prijs
     WHERE id = :id
@@ -140,7 +140,7 @@ function updateRecord($row){
     $stmt = $conn->prepare($sql);
     // Uitvoeren
     $stmt->execute([
-        ':merk'=>$row['merk'],
+        ':naam'=>$row['naam'],
         ':type'=>$row['type'],
         ':prijs'=>$row['prijs'],
         ':id'=>$row['id']
@@ -157,15 +157,15 @@ function insertRecord($post){
 
     // Maak een query 
     $sql = "
-        INSERT INTO " . CRUD_TABLE . " (merk, type, prijs)
-        VALUES (:merk, :type, :prijs) 
+        INSERT INTO " . CRUD_TABLE . " (naam, type, prijs)
+        VALUES (:naam, :type, :prijs) 
     ";
 
     // Prepare query
     $stmt = $conn->prepare($sql);
     // Uitvoeren
     $stmt->execute([
-        ':merk'=>$_POST['merk'],
+        ':naam'=>$_POST['naam'],
         ':type'=>$_POST['type'],
         ':prijs'=>$_POST['prijs']
     ]);

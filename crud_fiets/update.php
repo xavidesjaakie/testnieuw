@@ -35,9 +35,9 @@
   <h2>Wijzig Fiets</h2>
   <form method="post">
     
-    <input type="hidden" id="merk" name="id" required value="<?php echo $row['id']; ?>"><br>
-    <label for="merk">Merk:</label>
-    <input type="text" id="merk" name="merk" required value="<?php echo $row['merk']; ?>"><br>
+    <input type="hidden" id="naam" name="id" required value="<?php echo $row['id']; ?>"><br>
+    <label for="naam">Naam:</label>
+    <input type="text" id="naam" name="naam" required value="<?php echo $row['naam']; ?>"><br>
 
     <label for="type">Type:</label>
     <input type="text" id="type" name="type" required value="<?php echo $row['type']; ?>"><br>

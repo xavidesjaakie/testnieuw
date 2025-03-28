@@ -21,8 +21,8 @@
     <body>
         <form method="post">
 
-        <label for="merk">Merk:</label>
-        <input type="text" id="merk" name="merk" required><br>
+        <label for="naam">Naam:</label>
+        <input type="text" id="naam" name="naam" required><br>
 
         <label for="type">Type:</label>
         <input type="text" id="type" name="type" required><br>
